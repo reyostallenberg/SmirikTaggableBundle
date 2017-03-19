@@ -1,5 +1,5 @@
 {
-    "name": "karser/smirik-taggable-bundle",
+    "name": "smirik/taggable-bundle",
     "description": "Taggable bundle for symfony based on taggable behavior",
     "keywords": ["propel", "behavior", "taggable"],
     "type": "symfony-bundle",
@@ -30,8 +30,14 @@
         }
     ],
     "require": {
-        "symfony/symfony": ">=2.1,<3.0",
-        "smirik/propel-taggable-behavior": "*"
+        "symfony/symfony": ">=2.1,^3.0",
+        "smirik/propel-taggable-behavior": "^1.0"
+    },
+    "repositories": {
+        "propel-taggable-behavior": {
+            "type": "vcs",
+            "url": "git@github.com:reyostallenberg/propel-taggable-behavior.git"
+        }
     },
     "target-dir": "Smirik/TaggableBundle",
     "autoload": {
